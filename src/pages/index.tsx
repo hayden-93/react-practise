@@ -2,6 +2,7 @@ import React from 'react';
 
 import Head from 'next/head';
 import Link from 'next/link';
+import TicTacToe from './TicTacToe';
 
 export default function Home() {
   const [count, setCount] = React.useState(0);
@@ -20,13 +21,14 @@ export default function Home() {
             <button onClick={() => setCount(count - 1)}>-</button>
           </div>
         </div>
-        <div>
+        {/* <div>
           <ul className='flex flex-col space-y-4'>
             <Link href='#'>Read more about React</Link>
             <Link href='#'>Read more about React</Link>
             <Link href='#'>Read more about React</Link>
           </ul>
-        </div>
+        </div> */}
+        <TicTacToe />
       </div>
     </>
   );
